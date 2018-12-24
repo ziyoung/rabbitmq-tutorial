@@ -1,0 +1,10 @@
+# https://medium.com/@thomasdecaux/deploy-rabbitmq-with-docker-static-configuration-23ad39cdbf39
+version: "3"
+services:
+  rabbitmq:
+    image: rabbitmq:3.7-management
+    ports:
+      - 8089:5672
+      - 15672:15672
+    volumes:
+      - /Users/zhiyang/docker-data/rabbitmq:/var/lib/rabbitmq
