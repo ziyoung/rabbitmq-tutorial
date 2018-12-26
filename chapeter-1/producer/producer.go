@@ -16,8 +16,9 @@ func main() {
 	const (
 		exchange   = "exchange_demo"
 		routingKey = "routingkey_demo"
-		queue      = "queue_demo"
+		// queue      = "queue_demo"
 	)
+
 	conn, err := amqp.Dial("amqp://root:root123@localhost:8089")
 	failOnError(err, "Failed to connect to RabbitMQ")
 	defer conn.Close()
@@ -37,26 +38,8 @@ func main() {
 	)
 	failOnError(err, "Failed to declare an exchange")
 
-	_, err = ch.QueueDeclare(
-		queue, // name
-		false, // durable
-		false, // delete when used
-		true,  // exclusive
-		false, // no-wait
-		nil,
-	)
-	failOnError(err, "Failed to declare a queue")
-
-	err = ch.QueueBind(
-		queue,      // queue name
-		routingKey, // routing key
-		exchange,   // exchange
-		false,      // no-wait
-		nil,
-	)
-	failOnError(err, "Failed to bind a queue")
-
 	message := "Hello World!"
+
 	err = ch.Publish(
 		exchange,   // exchange
 		routingKey, // routing key
