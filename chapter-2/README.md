@@ -1,7 +1,7 @@
 ### 队列
 
 > 例子来源于 RabbitMQ 官方文档。与官方例子不同，这里的例子做了简化。
-> 为了试验的方便，执行 producer 时，设置 repeat 参数来决定一次发送多少条消息。用两个 consumer 来接受这么多消息。通过对比两个 consumer 消费的消息，就可以探究 RabbitMQ 的用法了。
+> 为了实验的方便，执行 producer 时，设置 repeat 参数来决定一次发送多少条消息。用两个 consumer 来接受消息。通过对比两个 consumer 消费的消息，就可以探究 RabbitMQ 的用法了。
 
 #### work-queue
 

@@ -7,4 +7,4 @@ services:
       - 8089:5672
       - 15672:15672
     volumes:
-      - /Users/zhiyang/docker-data/rabbitmq:/var/lib/rabbitmq
+      - ~/docker-data/rabbitmq:/var/lib/rabbitmq
