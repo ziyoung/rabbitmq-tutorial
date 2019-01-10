@@ -1,6 +1,6 @@
-#rabbitmq-tutorial
+## rabbitmq-tutorial
 
-[RabbitMQ实战指南](https://book.douban.com/subject/27591386/) 是一本很适合初学者的书籍，该书对 RabbitMQ 中的许多概念讲解十分透彻。由于书中的示例代码较少（一些例子较为简单，放到书中也不合适），且例子都是通过 Java 语言编写。为了方便 Go 语言开发者使用 RabbbitMQ，把书中的例子用 Go 语言实现一遍，同时为第三章以及第四章补充了一些例子。
+[RabbitMQ实战指南](https://book.douban.com/subject/27591386/) 是一本很适合初学者的书籍，该书对 RabbitMQ 中的许多概念讲解十分透彻。由于书中的示例代码较少（一些例子较为简单，放到书中也不合适），且例子都是通过 Java 语言编写。为了方便 Go 语言开发者使用 RabbbitMQ，把书中的例子用 Go 语言实现一遍，同时为第三章以及第四章补充了一些例子。
 
 #### 安装
 
